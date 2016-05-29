@@ -19,36 +19,62 @@
     <![endif]-->       
 
 	<!-- title bar icons-->
-    <link rel="shortcut icon" href="images/ico/icon1.jpg">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/icon1.jpg">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/icon1.jpg">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/icon1.jpg">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/icon1.jpg">
+    <link rel="shortcut icon" href="images/ico/icon.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/icon.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/icon.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/icon.jpg">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/icon.jpg">
 
 	
-<style>  
+<style> 
+
  html,body
 {
-    background-image: url(images/bgimage1.jpg); 
-    height: 500px;
-
-    width: 100%;
-    background-repeat: no-repeat;
-
-    background-position: center center;
-    background-attachment: fixed;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-
-    -o-background-size: cover;
-    background-size: cover;
+   background-color:black;
+  
 }
 
-#synopsis { background-color:#fff; }
+
+.container1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url('images/synopsis/bg1.jpg');
+	    background-repeat: no-repeat;
+   opacity: 0.7;
+   width:1375px; height:500px;
+}
+
+
+
+.synopsis { background-color:#EEEEEE; }
+.synopsis1{background-color:#9C9F84;}
+
 .serif{ font-family:serif}
 .monospace{font-family:monospace}
 .Helvetica{font-family:Helvetica Neue}
+
+
+
+
+.synop {
+ position: relative; 
+    z-index: 2;
+  color: #fff;
+  font-family: arial;
+  margin-left: 2cm;
+  
+  width: 500px;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+
+}
 </style>
 	
 	</head><!--/head-->
@@ -60,7 +86,7 @@
         <div class="container-fluid">
              
 			  
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" height="100px"/></a>			<!-- for brand-->
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" height="50px"/></a>			<!-- for brand-->
                
 				
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -72,11 +98,11 @@
               
            
               <div class="collapse navbar-collapse">
-                 <ul class="nav navbar-nav">
+                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.html"><b>Home</b></a></li>
                
      			   <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Top Films</b><i class="icon-angle-down"></i></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Top Flicks</b><i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">By Region</a></li>
                             <li><a href="#">By Era</a></li>
@@ -137,7 +163,7 @@
                          </ul>
                     </li>
      
-                	 <li><a href="#"><b>New Releases</b></a></li>
+                	 <li><a href="#"><b>New Flicks</b></a></li>
                      <li><a href="#"><b>Trending</b></a></li>
                     
 					 <li class="dropdown">
@@ -147,13 +173,13 @@
                             <li><a href="#">Rented</a></li>
                             <li><a href="#">Purchased</a></li>
 							<li class="divider"></li>
+							<li><a href="#"><b>My Favourite</b></a></li>
                             <li><a href="#">Wishlist</a></li>
                             <li><a href="#">Preorder</a></li>
                         </ul>
                     </li>
-					<li><a href="#"><b>My Favourite</b></a></li>
-					<li><a href="#"><b>Community</b></a></li>
-                    <li><a href="#"><b>Blog</b></a></li> 
+					
+					
 				
 		
 	         	<li><a class="btn btn-default btn-danger" role="button" data-toggle="modal" data-target="#m1"><b style="color:white;">Log-in</b></a></li>
@@ -164,91 +190,120 @@
                 
                   
 				</div>
-				
-				
-		
-                    
-        </ul>
-		
-        </div>
+		</ul>  </div>
         </div>
          </header><!--/header-->
 		 
-		 <br/><br/>
+	
     
-<!--Flick Carousel -->	
+<!--Flick poster -->	
 <div class="row">
-	<section id="main-slider">
-        <div class="col-sm-offset-1 col-sm-10 carousel slide wet-asphalt">
-    
-         	<ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#main-slider" data-slide-to="1"></li>
-                <li data-target="#main-slider" data-slide-to="2"></li>
-            </ol>
-         
-     		 <div class="carousel-inner" role="listbox">
-                <div class="item active" style="background-image: url(images/synopsis/bg1.jpg); width:1200px; height:400px;"></div>
+<div class="container1 col-sm-6">
+    <br/>
+         <div class="synop">
+ 
+            <div class="inner-wrap" >
+                <h1 style="color:#FFC638; font-family:Crimson Text;">Life Of The Pie</h1>
+              
+                 <div class="new-retting">    <!--Rating::: 4 stars & 1 default -->				
+							   
+							   <div class="star"><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_default.png"/>&nbsp&nbsp<a class="review-count" href="#reviews" style="color:#FFE884;">4 Reviews</a><br/><h5 style="color:#FFE884">Genre : Adventure</h5>
+							   
+				               </div>
+							   <div class="social social-buttonset">
+                     <a href="#" class="btn btn-danger"><b>G +1</b></a>
+                     <a href="#" class="btn" style="background-color:#3b5998;"><i class="icon icon-facebook" style="color:white"></i> <b style="color:white">Share | 8</b></a>
+                       <a href="#" class="btn btn-info"><i class="icon icon-twitter"></i> <b>Tweet</b> | 15</a>
+                            </div>
+				</div>
 				
-				<!--/.item1-->
-     			 <div class="item" style="background-image: url(images/synopsis/lop2.jpg); width:1200px; height:400px;"></div> <!--/.item2---->
-                <div class="item" style="background-image: url(images/synopsis/lop3.jpg); width:1200px; height:400px;"></div><!--/.item3-->
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-		
-        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-          <br/><br/><br/>  <i class="icon-angle-left"></i>
-        </a>
-        <a class="next hidden-xs" href="#main-slider" data-slide="next">
-           <br/><br/><br/>   <i class="icon-angle-right"></i>
-        </a>
-    </section><!--/#main-slider-->
-</div>	
-	<!-- ///Carousel finish -->
-	
+			 </div>  
+			
+                <br/><br/>
+                <p>"An impassioned defense of zoos, a death-defying trans-Pacific sea adventure a la Kon-Tiki, and a hilarious shaggy-dog story...:This audacious movie manages to be all of these.His fight against the odds is heightened by the company of a hyena and a male Bengal tiger."  – Fred Armisen, <em>Documentary Now!</em>, <em>SNL</em></p>   
+</div></div>
 
-	
+              <div class="synop col-sm-6">        
+                  <br/><br/><br/><br/><br/><br/><br/><br/><br/>			00
+                        <a class="btn" style="background-color:#b29600; width: 90px; height: 65px; font-size: 40px;margin: -46px -46px;" href="images/portfolio/full/item5.jpg" rel="prettyPhoto"><i class="icon-play" style="color:white"></i></a>          
+                    </div>    
+</div>
+ 
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/>
+<br/>				
 	<hr/>
 	<!-- Vimeo video Trailer -->
-	<div class="row">
-                      <div class="col-sm-offset-1 col-sm-4">
-                                 <b><center><h2 class="serif" style="background-color:white;">Trailer</h2></center></b>                         
+	<section class="synopsis1">
+	<div class="container-fluid">
+	   <div class="row">
+                  <div class="col-sm-5 col-sm-offset-1">
+                                <b><center><h2 class="Khula" style="background-color:#FFE884; border-radius: 10px;  ">Trailer</h2></center></b>                         
                                   <div class="embed-container">
                                         <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                   </div>
                        </div>
 					   
-					   <div class="col-sm-offset-1 col-sm-5">
-                                 <b><center><h2 class="serif" style="background-color:white;">Full Movie</h2></center></b>                         
+					   <div class="col-sm-5">
+                                 <b><center><h2 class="Khula" style="background-color:#FFE884; border-radius: 10px;">Watch Now</h2></center></b>                         
                                   <div class="embed-container">
                                         <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                   </div>
                        </div>
-	</div>		
-	<hr/>
-	
-	 <section id="synopsis" class="container">
-        <h2><center><u class="serif">Life of the Pie</u></center></h2><h5>Genre:Adventure</h5><hr/>
-        <h4 class="monospace"><center>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Pellentesque habitant morbi tristique senectus.Ang Lee OBS is </center></h4>
+	</div>
+</div>
+</section>	
+	<br/>
+	<section class="synopsis">
+	<div class="container-fluid">
+	   <div class="row">
+	        <div class="col-sm-3 col-sm-offset-1">
+		     <img src="images/synopsis/lop3.jpg" width="300" height="450">
+			 <br/><br/>
+			 <div class="btn" style="background-color:#FFE884; width:300px; height:60px;">
+			 <b><center><h3 class="Khula">Watch Now</h3></center></b>
+			 </div>
+			  <h4 class="Helvetica"><b>Language</b>: English
+              <br/><br/><b>Subtitles</b>:English-us
+              <br/><br/><b>Runtime</b>: 2hr.
+              <br/><br/><b>Rating</b>:<img src="images/slider/stars_rating.png"/><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_default.png"/><img src="images/slider/stars_default.png"/>
+            <br/><br/><b>Release date</b>: November 23, 2012 (India)
+            <br/><br/><b>Director</b>: Ang Lee
+            <br/><br/><b>Featured song</b>: Pi's Lullaby
+            <br/><br/><b>Adapted from</b>: Life of Pi</h5>
+            <br/><br/><b>Suitable for</b>:<b>All Ages</b>
+            </h5>
+		  </div>
+		 <div class="col-sm-5 col-sm-offset-1">
+        <h2 style="color:#b07c00"><center><u class="serif">Synopsis</u></center></h2><h5>Genre:Adventure</h5><hr/>
+        <h3 class="serif" style="color:#564F5A; font-size:1.3em; font-family:sans-serif;"><center>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere.His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.An impassioned defense of zoos, a death-defying trans-Pacific sea adventure a la Kon-Tiki, and a hilarious shaggy-dog story.This audacious movie manages to be all of these.His fight against the odds is heightened by the company of a hyena and a male Bengal tiger. </center></h3>
 		<hr/>
-<h5 class="Helvetica">Language: English
-<br/>Subtitles:English-us
-<br/>Runtime: 2hr.
-<br/>Rating:<div class="star"><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_default.png"/><img src="images/slider/stars_default.png"/></div>
-<br/>Release date: November 23, 2012 (India)
-<br/>Director: Ang Lee
-<br/>Featured song: Pi's Lullaby
-<br/>Adapted from: Life of Pi</h5>
-<br/>Suitable for:<b>All Ages</b>
-</h5>
+		
+	  <hr/><h3 class="serif" style="color:#b07c00"><center>Directed By</center></h3>
+	  <center><img src="images/synopsis/angle.jpg" height="300px"/></center>
+	  <br/><h4><center><b>Ang Lee</b></h4></center><hr/>  
+       <p class="serif"><center><h4>Ang Lee OBS is a Taiwanese-born American film director, screenwriter and producer. Lee's earlier films, such as The Wedding Banquet, Pushing Hands etc. </h4></center></p>           
+        </div>
+       </section>
+		</div>
 
-<hr/>
- <h5 name="cast" id="cast" class="dataHeaderWithBorder">
+
+  
+  </div>
+  
+   <section class="synopsis">
+   <hr/>
+       
+          <b><h3 style="margin-left:3cm">Cast<small>&nbsp (in credits order) </small></h3></b>
+          
         
-      <b><h3>Cast</h3></b>
-          <span>(in credits order)</span>
-    &nbsp;
-    </h5>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
     <table class="cast_list table table-striped ">    
   
       <tr>
@@ -690,14 +745,10 @@ itemprop='url'> <span class="itemprop" itemprop="name">Mythili Prakash</span>
 
 
 	  </table>
-	  
-	  <hr/><h3>Director</h3>
-	  <center><img src="images/synopsis/angle.jpg"/></center>
-	  <br/><center><b>Ang Lee</b></center><hr/>  
-       <p class="serif">Bio : Ang Lee OBS is a Taiwanese-born American film director, screenwriter and producer. Lee's earlier films, such as The Wedding Banquet, Pushing Hands, andPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Pellentesque habitant morbi tristique senectus.Ang Lee OBS is a Taiwanese-born American film director, screenwriter and producer. Lee's earlier films, such as The Wedding Banquet, Pushing Hands, andPellentesque habitant </p>           
-        
-        
-    </section><!--/#Movie synopsis-->
+	  </div>
+	  </section>
+	  </div>
+    <!--/#Movie synopsis-->
 		
 
 
@@ -716,6 +767,8 @@ itemprop='url'> <span class="itemprop" itemprop="name">Mythili Prakash</span>
                         <li><a href="#"><b>About Us</b></a></li>
                         <li><a href="#"><b>Faq</b></a></li>
                         <li><a href="contact-us.html"><b>Contact Us</b></a></li>
+						<li><a href="#"><b>Community</b></a></li>
+                        <li><a href="#"><b>Blog</b></a></li> 
                         <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li><!--#gototop-->
                     </ul>
                 </div>
