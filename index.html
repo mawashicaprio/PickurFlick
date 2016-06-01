@@ -46,27 +46,8 @@
     background-size: cover;
 }
 
-<!--/*.navbar{
 
-background-image: url(images/slider/focus1.png);
-background-repeat: repeat-x;
-border-color: none;
-background-size: 100px;
-
-filter: none;
-}
-
-#footer{
-background-image: url(images/slider/focus2.jpg);
-background-repeat: repeat-x;
-border-color: none;
-background-size: 170px;
--->
-filter: none;
-}
-*/
-
-ul.img-list {
+ul.img-list {     //for recommended movie section
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -107,6 +88,28 @@ span.text-content {
 }
 
 
+
+/*.navbar{                // earlier ver spotlights in nav & footer
+
+background-image: url(images/slider/focus1.png);
+background-repeat: repeat-x;
+border-color: none;
+background-size: 100px;
+
+filter: none;
+}
+
+#footer{
+background-image: url(images/slider/focus2.jpg);
+background-repeat: repeat-x;
+border-color: none;
+background-size: 170px;
+
+filter: none;
+}
+*/
+
+
 </style>
 	
 	</head><!--/head-->
@@ -119,7 +122,8 @@ span.text-content {
         <div class="container-fluid">
              
 			  
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" height="50px"/></a>			<!-- for brand-->
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" height="50px"/></a>			4
+					<!-- for brand-->
                
 				
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -140,15 +144,15 @@ span.text-content {
                             <li><a href="#">By Region</a></li>
                             <li><a href="#">By Era</a></li>
                             
-							<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">By Genres&nbsp <i class="icon-angle-right"></i></a>
-                            <ul class="dropdown-menu">
+		<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">By Genres&nbsp <i class="icon-angle-right"></i></a>
+               <ul class="dropdown-menu">
 							
                               
-             <li class="back"><a href="#">Back</a></li>
-         <li>
-            <a href="/movie-genres/action-adventure-films-1">Action/Adventure</a>
-        </li>
+               <li class="back"><a href="#">Back</a></li>
+             <li>
+                <a href="/movie-genres/action-adventure-films-1">Action/Adventure</a>
+             </li>
         <li>
           <a href="/movie-genres/animation-films-10">Animated</a>
         </li>
@@ -245,7 +249,7 @@ span.text-content {
             </ol>
          
      		 <div class="carousel-inner" role="listbox">
-                <div class="item active" style="background-image: url(images/slider/bg1.jpg); width:533; height:400px;">
+                <div class="item active" style="background-image: url(images/slider/bg1.jpg);">   <!-- width:533; height:400px;-->
                     
 					<div class="container">
                         <div class="row">
@@ -260,7 +264,7 @@ span.text-content {
                 </div><!--/.item1-->
              
 
-     			 <div class="item" style="background-image: url(images/slider/bg2.jpg); width:533; height:400;"">
+     			 <div class="item" style="background-image: url(images/slider/bg2.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
@@ -276,7 +280,7 @@ span.text-content {
                 </div><!--/.item2---->
 				
 				
-                <div class="item" style="background-image: url(images/slider/bg3.jpg); width:533; height:400;"">
+                <div class="item" style="background-image: url(images/slider/bg3.jpg);">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
@@ -307,13 +311,13 @@ span.text-content {
             <i class="icon-angle-right"></i>
         </a>
     </section><!--/#main-slider-->
+	 
 	
-	<!-- ///Carousel finish -->
+	<!-- //Carousel finish -->
 	
 	
 <!-- Modals -->	
-	<div class="modal fade" id="m2">
-
+<div class="modal fade" id="m2">
    <div class="modal-dialog">  
 	 <div class="modal-content">
          <div class="modal-header">
@@ -367,7 +371,7 @@ span.text-content {
       
  </form>
  
- </div></div></div></div></div></div>
+ </div></div></div></div></div>
  
  
  <!-- Modal for Login -->
@@ -428,7 +432,7 @@ span.text-content {
 				
 				<ul class="img-list">
 					 <div class="row">
-					      <div class="col-sm-3">
+					      <div class="col-sm-3 col-xs-12">
 						  <li>
 				             <!-- Item 1 -->
 				    	      <a href="synopsis.html">
@@ -456,7 +460,7 @@ span.text-content {
 						 
 					
 					
-					<div class="col-sm-3 col-sm-offset-1">
+					<div class="col-sm-3 col-xs-12 col-sm-offset-1">
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -480,7 +484,7 @@ span.text-content {
 					 </div>
 					
 					
-					<div class="col-sm-3 col-sm-offset-1">
+					<div class="col-sm-3 col-xs-12 col-sm-offset-1">
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -507,7 +511,7 @@ span.text-content {
 					
 					<ul class="img-list">
 					 <div class="row">
-					      <div class="col-sm-3">
+					      <div class="col-sm-3 col-xs-12">
 						  <li>
 				             <!-- Item 1 -->
 				    	      <a href="">
@@ -535,7 +539,7 @@ span.text-content {
 						 
 					
 					
-					<div class="col-sm-3 col-sm-offset-1">
+					<div class="col-sm-3 col-xs-12 col-sm-offset-1">
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -559,7 +563,7 @@ span.text-content {
 					 </div>
 					
 					
-					<div class="col-sm-3 col-sm-offset-1">
+					<div class="col-sm-3 col-xs-12 col-sm-offset-1">
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -586,7 +590,7 @@ span.text-content {
 					<br/><br/><br/><br/><br/><br/>
 					<ul class="img-list">
 					 <div class="row">
-					      <div class="col-sm-3">
+					      <div class="col-sm-3 col-xs-12">
 						  <li>
 				             <!-- Item 1 -->
 				    	      <a href="">
@@ -614,7 +618,7 @@ span.text-content {
 						 
 					
 					
-					<div class="col-sm-3 col-sm-offset-1">
+					<div class="col-sm-3 col-xs-12 col-sm-offset-1">
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -638,7 +642,7 @@ span.text-content {
 					 </div>
 					
 					
-					<div class="col-sm-3 col-sm-offset-1">
+					<div class="col-sm-3 col-xs-12 col-sm-offset-1">
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
