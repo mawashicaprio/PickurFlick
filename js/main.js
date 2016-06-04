@@ -17,7 +17,7 @@ jQuery(function($) {
 		});
 	});
 
-	//portfolio
+	//portfolio:aboutus
 	$(window).load(function(){
 		$portfolio_selectors = $('.portfolio-filter >li>a');
 		if($portfolio_selectors!='undefined'){
