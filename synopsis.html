@@ -12,6 +12,8 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
  
  <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -30,7 +32,7 @@
  html,body
 {
    background-color:black;
-  
+   font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -52,7 +54,8 @@
 
 .synopsis { background-color:#d3d3d3 ;
  }
-.synopsis1{background-color:#1b1b1b;;
+
+ .synopsis1{background-color:#1b1b1b;;
 }
 
 .synopsis3{
@@ -62,6 +65,24 @@ background-color:#FFE884;
 .serif{ font-family:serif}
 .monospace{font-family:monospace}
 .Helvetica{font-family:Helvetica Neue}
+
+.flickH {
+   font-family: 'Open Sans', sans-serif;
+   color:#d9534f;
+   
+}
+
+.flickT {
+   font-family: 'Open Sans', sans-serif;
+   color:#a35c35;
+   text-shadow: 0.1px 0.1px 0px grey, 2px 2px 0px rgba(0,0,0,0.15);
+   
+}
+
+.flickE{
+   font-family: 'Open Sans', sans-serif;
+      
+}
 
 
 
@@ -93,19 +114,19 @@ width:300px;
 	
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top"role="banner">
-        <div class="container-fluid">
-             
-			  
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" height="50px"/></a>			<!-- for brand-->
+            <div class="navbar-header">
+			 <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" height="50px"/></a>			
+					<!-- for brand-->
                
-				
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                 
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-              
+				
+              </div>
            
               <div class="collapse navbar-collapse">
                  <ul class="nav navbar-nav navbar-right">
@@ -117,15 +138,15 @@ width:300px;
                             <li><a href="#">By Region</a></li>
                             <li><a href="#">By Era</a></li>
                             
-							<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">By Genres&nbsp <i class="icon-angle-right"></i></a>
-                            <ul class="dropdown-menu">
+		<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">By Genres&nbsp <i class="icon-angle-right"></i></a>
+               <ul class="dropdown-menu">
 							
                               
-             <li class="back"><a href="#">Back</a></li>
-         <li>
-            <a href="/movie-genres/action-adventure-films-1">Action/Adventure</a>
-        </li>
+               <li class="back"><a href="#">Back</a></li>
+             <li>
+                <a href="/movie-genres/action-adventure-films-1">Action/Adventure</a>
+             </li>
         <li>
           <a href="/movie-genres/animation-films-10">Animated</a>
         </li>
@@ -196,7 +217,7 @@ width:300px;
 	            <li><a class="btn btn-default btn-info" role="button" data-toggle="modal" data-target="#m2"><b style="color:white;">Sign-up</b></a></li>
         
 		        <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" style="width:180px">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
                 
                   
 				</div>
@@ -204,15 +225,18 @@ width:300px;
         </div>
          </header><!--/header-->
 		 
+		 
 	
     
 <!--Flick poster -->	
 <div class="row">
-<div class="container1 col-sm-6">
-    <br/>
+
+   
+ <div class="col-sm-6 col-xs-12">
+ <div class="container1">
          <div class="synop">
  
-            <div class="inner-wrap" >
+            <section class="inner-wrap" >
                 <h1 style="color:#FFC638; font-family:Crimson Text;">Life Of The Pie</h1>
               
                  <div class="new-retting">    <!--Rating::: 4 stars & 1 default -->				
@@ -227,10 +251,12 @@ width:300px;
                             </div>
 				</div>
 				
-			 </div>  
+				<br/><br/>
+                <p class="Helvetica" style="font-size:18px;">"An impassioned defense of zoos, a death-defying trans-Pacific sea adventure a la Kon-Tiki , and a hilarious shaggy-dog story...This audacious movie manages to be all of these . His fight against the odds is heightened by the company of a hyena and a male Bengal tiger." – Fred Armisen, <em>Documentary Now!</em>, <em>SNL</em></p> 
+				
+			 </section>  
 			
-                <br/><br/>
-                <p class="Helvetica" style="font-size:17px;">"An impassioned defense of zoos, a death-defying trans-Pacific sea adventure a la Kon-Tiki , and a hilarious shaggy-dog story...This audacious movie manages to be all of these . His fight against the odds is heightened by the company of a hyena and a male Bengal tiger." – Fred Armisen, <em>Documentary Now!</em>, <em>SNL</em></p>   
+                  
 				 
 				 <div class="btn" style="background-color:#FFC638; width:300px; height:60px;">
 			 <b><center><h3 class="Khula" style="margin:auto; margin-top:8px;">Watch Trailer</h3></center></b>
@@ -238,10 +264,10 @@ width:300px;
 			                    <!-- <div class="embed-container">
                                         <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>
                                   </div>-->
-			 </div>
-</div></div>
+			     </div>
+</div></div></div>
 
-              <div class="synop col-sm-5">        
+              <div class="synop col-sm-5 col-xs-12">        
                   <br/><br/><br/><br/><br/><br/><br/><br/><br/>			
                         <a href="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" rel="prettyPhoto"><img src="images/play.png" style="width:85px; height:85px;"/></a>          
                     </div>    
@@ -279,11 +305,11 @@ width:300px;
 </div>
 </section>	-->
 
-<div class="panel panel-default">
+<div class="panel panel-info">
             <div class="panel-heading">
               <h4 class="panel-title">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2">
-                  <b><h3 style="margin-left:3cm"><center>Synopsis</center></h3></b>
+                  <b><h3 class="flickH" style="margin-left:3cm"><center>Synopsis</center></h3></b>
                 </a>
               </h4>
             </div>
@@ -301,7 +327,7 @@ width:300px;
 			 <div class="btn" style="background-color:#FFC638; width:300px; height:60px;">
 			 <b><center><h3 class="Khula" style="margin:auto; margin-top:8px;">Watch Now</h3></center></b>
 			 </div>
-			  <h4 class="Helvetica" style="color:#141414"><b>Language</b>: English
+			  <h4 class="flickE" style="color:#141414"><b>Language</b>: English
               <br/><br/><b>Subtitles</b>:English-us
               <br/><br/><b>Runtime</b>: 2hr.
               <br/><br/><b>Rating</b>:<img src="images/slider/stars_rating.png"/><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_rating.png"/><img src="images/slider/stars_default.png"/><img src="images/slider/stars_default.png"/>
@@ -318,16 +344,16 @@ width:300px;
              
 		<div class="col-sm-6 col-sm-offset-1">
 
-                     <h2 style="color:#141414 "><center><u class="serif">Movie Details</u></center></h2>
+                     <h2 style="color:#141414 "><center><u class="flickE">Movie Details</u></center></h2>
              
         <h5 style="color:#141414">Genre:Adventure</h5><hr/>
-        <h3 class="serif" style="color:#141414 ; font-size:1.3em; font-family:sans-serif;"><center>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere.His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.An impassioned defense of zoos, a death-defying trans-Pacific sea adventure a la Kon-Tiki, and a hilarious shaggy-dog story.This audacious movie manages to be all of these.His fight against the odds is heightened by the company of a hyena and a male Bengal tiger. </center></h3>
+        <h3 class="flickT" style="color:#141414 ; font-size:1.3em; font-family:sans-serif;"><center>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere.His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.An impassioned defense of zoos, a death-defying trans-Pacific sea adventure a la Kon-Tiki, and a hilarious shaggy-dog story.This audacious movie manages to be all of these.His fight against the odds is heightened by the company of a hyena and a male Bengal tiger. </center></h3>
 		<hr/>
 		
-	  <hr/><h3 class="serif" style="color:#141414 "><center>Directed By</center></h3>
+	  <hr/><h3 class="flickE" style="color:#141414 "><center>Directed By</center></h3>
 	  <center><img src="images/synopsis/angle.jpg" height="300px"/></center>
 	  <br/><h4><center><b style="color:#141414">Ang Lee</b></h4></center><hr/>  
-       <p class="serif"><center><h4 style="color:#141414">Ang Lee OBS is a Taiwanese-born American film director, screenwriter and producer. Lee's earlier films, such as The Wedding Banquet, Pushing Hands etc. </h4></center></p>           
+       <p><center><h4 class="flickT" style="color:#141414">Ang Lee OBS is a Taiwanese-born American film director, screenwriter and producer. Lee's earlier films, such as The Wedding Banquet, Pushing Hands etc. </h4></center></p>           
         </div>
 		</div>
 		</div>
@@ -344,11 +370,11 @@ width:300px;
   
 
             
-    <div class="panel panel-default">
+    <div class="panel panel-info">
             <div class="panel-heading">
               <h4 class="panel-title">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseOne3">
-                           <b><h3 style="margin-left:3cm"><center>Cast & Crew</center> </h3></b>
+                           <b><h3 class="flickH" style="margin-left:3cm"><center>Cast & Crew</center> </h3></b>
                 </a>
               </h4>
             </div>
