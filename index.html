@@ -16,6 +16,7 @@
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
 
+
  
  <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -55,10 +56,18 @@ ul.img-list {     //for flick type section
   margin: 0;
   padding: 0;
   text-align: center;
+  }
   
-}
-
+ 
 ul.img-list li {
+ display: inline-block;
+  height: 150px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 150px;
+  float:left;
+}
+div.list1 li {
  display: inline-block;
   height: 150px;
   margin: 0 1em 1em 0;
@@ -69,7 +78,12 @@ ul.img-list li {
 
 
 
+
 ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+div.list1 li:hover span.text-content {
   opacity: 1;
 }
 
@@ -98,6 +112,13 @@ span.text-content {
 .flickT {
    font-family: 'Open Sans', sans-serif;
    color:black;
+   text-shadow: 0.5px 0.5px 0px black, 4px 4px 0px rgba(0,0,0,0.15);
+   
+}
+
+li,.flickE{
+   font-family: 'Open Sans', sans-serif;
+   color:white;
    
 }
 
@@ -271,8 +292,8 @@ filter: none;
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="carousel-content centered">
-                                    <h2 class="animation animated-item-1">PickurFlick indie</h2>
-                                    <p class="animation animated-item-2">Best Video Streaming site</p>
+                                    <h2 class="flickE animation animated-item-1">PickurFlick indie</h2>
+                                    <p class="flickE animation animated-item-2">Best Video Streaming site</p>
                                 </div>
                             </div>
                         </div>
@@ -285,10 +306,10 @@ filter: none;
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="carousel-content center centered">
-                                    <h2 class="boxed animation animated-item-1">Watch Anywhere,Anytime..</h2>
-                                    <p class="boxed animation animated-item-2">On any Device</p>
+                                    <h2 class="flickE boxed animation animated-item-1">Watch Anywhere,Anytime..</h2>
+                                    <p class="flickE boxed animation animated-item-2">On any Device</p>
                                     <br>
-                                    <a class="btn btn-md animation animated-item-3" href="#">Learn More</a>
+                                    <a class="flickE btn btn-md animation animated-item-3" href="#">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -301,9 +322,9 @@ filter: none;
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content centered">
-                                    <h2 class="animation animated-item-1">Latest Movies & Trends at PickurFlick</h2>
-                                    <p class="animation animated-item-2">Go Pick your Flick!!:D</p>
-                                    <a class="btn btn-md animation animated-item-3" href="#">Learn More</a>
+                                    <h2 class="flickE animation animated-item-1">Latest Movies & Trends at PickurFlick</h2>
+                                    <p class="flickE animation animated-item-2">Go Pick your Flick!!:D</p>
+                                    <a class="flickE btn btn-md animation animated-item-3" href="#">Learn More</a>
                                 </div>
                             </div>
 							<!-- Vimeo video -->
@@ -477,7 +498,7 @@ filter: none;
 				 </div>
 				 				
 					
-			<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+			<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>
@@ -502,7 +523,7 @@ filter: none;
 		  </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -535,7 +556,8 @@ filter: none;
 			
          			<ul class="img-list"><br/>
 				             <!-- Item 1 -->
-				    	      <a href="">
+				    	      <li style="padding-bottom: 7cm;">
+							  <a href="synopsis.html">
 					             <img src="images/slider/bg5.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
 <br/>Release date: November 23, 2012 (India)
@@ -560,7 +582,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -584,7 +606,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -612,7 +634,8 @@ filter: none;
 				<div class="row"><div class="col-md-3 col-xs-12">
 				  <ul class="img-list"><br/>
 				             <!-- Item 1 -->
-				    	      <a href="">
+<li style="padding-bottom: 7cm;">				    	     
+							 <a href="synopsis.html">
 					             <img src="images/slider/bg8.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
 <br/>Release date: November 23, 2012 (India)
@@ -637,7 +660,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -661,7 +684,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -692,7 +715,8 @@ filter: none;
 			<div class="row"><div class="col-md-3 col-xs-12">
 				  <ul class="img-list"><br/>
 				             <!-- Item 1 -->
-				    	      <a href="synopsis.html">
+<li style="padding-bottom: 7cm;">				    	  
+						  <a href="synopsis.html">
 					             <img src="images/slider/bg11.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
 <br/>Release date: November 23, 2012 (India)
@@ -717,7 +741,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -741,7 +765,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -767,8 +791,9 @@ filter: none;
 					
 			<div class="row"><div class="col-md-3 col-xs-12">
 				  <ul class="img-list"><br/>
-				             <!-- Item 1 -->
-				    	      <a href="">
+<li style="padding-bottom: 7cm;">				 
+				 <!-- Item 1 -->
+				    	      <a href="synopsis.html">
 					             <img src="images/slider/bg5.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
 <br/>Release date: November 23, 2012 (India)
@@ -793,7 +818,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -817,7 +842,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -843,8 +868,9 @@ filter: none;
 					
 					<div class="row"><div class="col-md-3 col-xs-12">
 				  <ul class="img-list"><br/>
-				             <!-- Item 1 -->
-				    	      <a href="">
+<li style="padding-bottom: 7cm;">				 
+				 <!-- Item 1 -->
+				    	      <a href="synopsis.html">
 					             <img src="images/slider/bg8.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
 <br/>Release date: November 23, 2012 (India)
@@ -869,7 +895,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -893,7 +919,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -927,7 +953,8 @@ filter: none;
 				
 			<div class="row"><div class="col-md-3 col-xs-12">
 				  <ul class="img-list"><br/>
-				             <!-- Item 1 -->
+<li style="padding-bottom: 7cm;">				      
+					  <!-- Item 1 -->
 				    	      <a href="synopsis.html">
 					             <img src="images/slider/bg11.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
@@ -953,7 +980,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -977,7 +1004,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -1003,8 +1030,9 @@ filter: none;
 					
 				<div class="row"><div class="col-md-3 col-xs-12">
 				  <ul class="img-list"><br/>
-				             <!-- Item 1 -->
-				    	      <a href="">
+<li style="padding-bottom: 7cm;">				          
+						  <!-- Item 1 -->
+				    	      <a href="synopsis.html">
 					             <img src="images/slider/bg5.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
 <br/>Release date: November 23, 2012 (India)
@@ -1029,7 +1057,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -1053,7 +1081,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -1079,8 +1107,9 @@ filter: none;
 					
 <div class="row"><div class="col-md-3 col-xs-12">
 				  <ul class="img-list"><br/>
-				             <!-- Item 1 -->
-				    	      <a href="">
+				             <li style="padding-bottom: 7cm;">
+							 <!-- Item 1 -->
+				    	      <a href="synopsis.html">
 					             <img src="images/slider/bg8.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
 <br/>Release date: November 23, 2012 (India)
@@ -1105,7 +1134,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -1129,7 +1158,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -1162,6 +1191,7 @@ filter: none;
 				<div class="row">
 				<div class="col-md-3 col-xs-12"><ul class="img-list"><br/>
 				             <!-- Item 1 -->
+							 <li style="padding-bottom: 7cm;">
 				    	      <a href="synopsis.html">
 					             <img src="images/slider/bg11.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
@@ -1187,7 +1217,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -1211,7 +1241,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -1237,7 +1267,8 @@ filter: none;
 					<div class="row">
 					<div class="col-md-3 col-xs-12"><ul class="img-list"><br/>
 				             <!-- Item 1 -->
-				    	      <a href="">
+							 <li style="padding-bottom: 7cm;">
+				    	      <a href="synopsis.html">
 					             <img src="images/slider/bg5.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
 <br/>Release date: November 23, 2012 (India)
@@ -1262,7 +1293,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -1286,7 +1317,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -1311,8 +1342,9 @@ filter: none;
 					
 					<div class="row">
 					<div class="col-md-3 col-xs-12"><ul class="img-list"><br/>
-				             <!-- Item 1 -->
-				    	      <a href="">
+<li style="padding-bottom: 7cm;">	
+	<!-- Item 1 -->
+				    	      <a href="synopsis.html">
 					             <img src="images/slider/bg8.jpg" alt="Life-of-pie" width="430px" height="250px"  />
 				                  <span class="text-content"><span><b>synopsis</b><br/><br/><b>Pi Patel finds a way to survive in a lifeboat that is adrift in the middle of nowhere. His fight against the odds is heightened by the company of a hyena and a male Bengal tiger.
 <br/>Release date: November 23, 2012 (India)
@@ -1337,7 +1369,7 @@ filter: none;
 						 
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				              
 							  <!-- Item 2 -->
                           <li>				    	     
@@ -1361,7 +1393,7 @@ filter: none;
 					 </div>
 					
 					
-					<div class="col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0">
+					<div class="list1 col-md-3 col-xs-12 col-sm-offset-1 col-xs-offset-0"><br/>
 				               <!-- Item 3 -->
 				    	      <li>
 							  <a href="synopsis.html">
@@ -1392,8 +1424,8 @@ filter: none;
             <div class="row">
                 <div class="flickT col-lg-12">
                     <div class="center">
-                        <h2>What people say about PickurFlick</h2>
-                        <p>PickUrFlick is a website that has truly changed the world. It’s a site that everyone uses, and I have plenty of friends who go on it daily. For an avid internet user it’s almost impossible to ignore PickUrFlick. The content is not only entertaining but also extremely helpful; there have been many classes where I have needed supplementary help on Pickurflick to understand the material.</p>
+                        <h2>What people say about PickurFlick</h2><hr/>
+                        <p>PickUrFlick is a website that has truly changed the world. It’s a site that everyone uses, and I have plenty of friends who go on it daily. For an avid internet user it’s almost impossible to ignore PickUrFlick. The content is not only entertaining but also extremely helpful; there have been many classes where I have needed supplementary help on Pickurflick to understand the material.</p><hr/>
                     </div>
                     <div class="gap"></div>
                     <div class="row">
