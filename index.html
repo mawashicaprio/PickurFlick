@@ -278,37 +278,91 @@ filter: none;
 	            <li><a class="btn btn-default btn-info" role="button" data-toggle="modal" data-target="#auth-signup"><b style="color:white;">Sign-up</b></a></li>
         
 		        <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    <input type="text" class="form-control help-block" placeholder="Search" name="srch-term" id="srch-term">
                 
                   
 				</div>
 		</ul>  </div>
         </div>
          </header><!--/header-->
+
+
+         
 		 <!-- signup/login modal-->
-		 
-	<div class="modal fade" id="auth-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	
+	 <div class="modal fade" id="auth-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog modal-width" role="document">
 		<div class="modal-content">
 		  <div class="modal-body modal-padding">		  
-			<center>			
-			<div class="light-blue modal-head">SIGN UP</div>
-           
-       <div class="form-group">
-        <input type="text" class="form-control" placeholder="First name" name="first_name" id="first_name" />
-        </div>
-		
-		 <div class="form-group">
-        <input type="text" class="form-control" placeholder="Last name" name="last_name" id="last_name" />
+					
+	  <form class="form-signin" method="post" id="login-form">
+      
+        <h2 class="form-signin-heading"><b>Log In</b></h2><hr />
+        
+    
+        
+        <div class="form-group">
+        <input type="email" class="form-control help-block" placeholder="Email address" name="user_email" id="user_email" />
+        <span id="check-e"></span>
         </div>
         
         <div class="form-group">
-        <input type="email" class="form-control" placeholder="Email address" name="user_email" id="user_email" />
+        <input type="password" class="form-control help-block" placeholder="Password" name="password" id="password" />
+        </div>
+       
+      <hr />
+        
+        <div class="form-group">
+
+            <button type="submit" class="btn btn-default" name="btn-login" id="btn-login">
+        <span class="glyphicon glyphicon-log-in"></span> &nbsp; Log In
+      </button> 
+       <p class="text-right"><a href="#">Forgot password?</a></p>
+        </div>  
+      
+      
+      </form>
+
+    </div>
+			<br>
+			<div class="grey"><center><b>CONNECT WITH</b></center></div>
+			<br/>
+			<a href="#" class="btn btn-lg btn-danger col-xs-6"><b>Gmail</b></a>
+			<a href="#" class="btn btn-lg col-xs-6" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>
+
+	
+			
+		  </div>		  
+		</div>
+	  </div>
+	</div>
+	
+		 <div class="modal fade" id="auth-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-width" role="document">
+		<div class="modal-content">
+		  <div class="modal-body modal-padding">		  
+			
+	  <form class="form-signin" method="post" id="login-form">
+      
+        <h2 class="form-signin-heading"><b>Sign-Up</b></h2><hr />
+	
+	
+           
+       <div class="form-group">
+        <input type="text" class="form-control " placeholder="First name" name="first_name" id="first_name" />
+        </div>
+		
+		 <div class="form-group">
+        <input type="text" class="form-control " placeholder="Last name" name="last_name" id="last_name" />
+        </div>
+        
+        <div class="form-group">
+        <input type="email" class="form-control " placeholder="Email address" name="user_email" id="user_email" />
         <span id="check-e"></span>
         </div>
 		
 		 <div class="form-group">
-        <input type="number" class="form-control" placeholder="Phone number" name="phone" id="phone" />
+        <input type="number" class="form-control "" placeholder="Phone number" name="phone" id="phone" />
         </div>
         
         <div class="form-group">
@@ -316,7 +370,7 @@ filter: none;
         </div>
         
         <div class="form-group">
-        <input type="password" class="form-control" placeholder="Retype Password" name="cpassword" id="cpassword" />
+        <input type="password" class="form-control help-block" placeholder="Retype Password" name="cpassword" id="cpassword" />
         </div>
         <hr />
         
@@ -324,39 +378,17 @@ filter: none;
             <button type="submit" class="btn btn-default" name="btn-save" id="btn-submit">
              <span class="glyphicon glyphicon-log-in"></span> &nbsp; Submit
             </button> 
-        </div>  
+      
+		</div>  
+		  </form>	
+		
+			<div class="grey"><center><b>CONNECT WITH</b></center></div>
 			<br/>
-			<div class="grey">CONNECT WITH</div>
-			<br><br>
-			<a href="#" class="btn btn-lg btn-danger"><b>Gmail</b></a><br/>
+			<a href="#" class="btn btn-lg btn-danger"><b>Gmail</b></a>
 			<a href="#" class="btn btn-lg" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>
+
 			
-			</center>
-			
-		  </div>		  
-		</div>
-	  </div>
-	</div>
-		 
-		 <div class="modal fade" id="auth-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog modal-width" role="document">
-		<div class="modal-content">
-		  <div class="modal-body modal-padding">		  
-			<center>			
-	
-			<div class="grey modal-head">LOGIN</div>
-			
-			<br><br>
-			<div class="grey"><b>CONNECT WITH</b></div>
-			<br><br>
-			<a href="#" class="btn btn-lg btn-danger"><b>Gmail</b></a><br/><br/>
-			<a href="#" class="btn btn-lg" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>
-			<br>
-			<div class="border-bottom"></div>
-			<br>
-			<img class="img-responsive img-rounded" src="images/gp-50.png">
-			<br><br>
-			</center>
+		
 			
 		  </div>		  
 		</div>
@@ -469,28 +501,28 @@ filter: none;
         </div>
         
         <div class="form-group">
-        <input type="text" class="form-control" placeholder="First name" name="first_name" id="first_name" />
+        <input type="text" class="form-control help-block" placeholder="First name" name="first_name" id="first_name" />
         </div>
 		
 		 <div class="form-group">
-        <input type="text" class="form-control" placeholder="Last name" name="last_name" id="last_name" />
+        <input type="text" class="form-control help-block" placeholder="Last name" name="last_name" id="last_name" />
         </div>
         
         <div class="form-group">
-        <input type="email" class="form-control" placeholder="Email address" name="user_email" id="user_email" />
+        <input type="email" class="form-control help-block" placeholder="Email address" name="user_email" id="user_email" />
         <span id="check-e"></span>
         </div>
 		
 		 <div class="form-group">
-        <input type="number" class="form-control" placeholder="Phone number" name="phone" id="phone" />
+        <input type="number" class="form-control help-block" placeholder="Phone number" name="phone" id="phone" />
         </div>
         
         <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password" name="password" id="password" />
+        <input type="password" class="form-control help-block" placeholder="Password" name="password" id="password" />
         </div>
         
         <div class="form-group">
-        <input type="password" class="form-control" placeholder="Retype Password" name="cpassword" id="cpassword" />
+        <input type="password" class="form-control help-block" placeholder="Retype Password" name="cpassword" id="cpassword" />
         </div>
         <hr />
         
@@ -530,12 +562,12 @@ filter: none;
         </div>
         
         <div class="form-group">
-        <input type="email" class="form-control" placeholder="Email address" name="user_email" id="user_email" />
+        <input type="email" class="form-control help-block" placeholder="Email address" name="user_email" id="user_email" />
         <span id="check-e"></span>
         </div>
         
         <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password" name="password" id="password" />
+        <input type="password" class="form-control help-block" placeholder="Password" name="password" id="password" />
         </div>
        
      	<hr />
@@ -904,7 +936,7 @@ especially for your viewing..</p>
                     <h4>Newsletter</h4>
                     <form role="form">
                         <div class="input-group">
-                            <input type="text" class="form-control" autocomplete="off" placeholder="Enter your email">
+                            <input type="text" class="form-control help-block" autocomplete="off" placeholder="Enter your email">
                             <span class="input-group-btn">
                                 <button class="btn btn-danger" type="button">Go!</button>
                             </span>
