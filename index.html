@@ -40,7 +40,7 @@
     width: 100%;
     background-repeat: no-repeat;
 
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
 
     -webkit-background-size: cover;
@@ -50,78 +50,75 @@
     background-size: cover;
 }
 
-
-ul.img-list {     //for flick type section
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    ul.img-list {     //for flick type section
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
   }
 
-  section.list1 {     //for flick type section
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+   section.list1 {     //for flick type section
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
   }
   
  
-ul.img-list li {
- display: inline-block;
-  height: 150px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 150px;
-  float:left;
-}
-
-
+  ul.img-list li {
+      display: inline-block;
+      height: 150px;
+      margin: 0 1em 1em 0;
+      position: relative;
+      width: 150px;
+      float:left;
+  }
 
 
 ul.img-list li:hover span.text-content {
-  opacity: 1;
+     opacity: 1;
 }
 
 section.list1 li:hover span.text-content1 {
-  opacity: 1;
+     opacity: 1;
 }
 
 
 span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 250px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 430px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    height: 250px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 430px;
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
 }
 span.text-content1 {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  right:0;
-  bottom:0;
-  left: 15px;
-  top: 20px;
-  position: absolute;
-  height: 250px;
-  width: 430px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    right:0;
+    bottom:0;
+    left: 15px;
+    top: 20px;
+    position: absolute;
+    height: 250px;
+    width: 430px;
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
 }
-
+//fonts
 .flickH {
    font-family: 'Open Sans', sans-serif;
    color:#e8a584;
@@ -139,10 +136,6 @@ li,.flickE{
    color:white;
    
 }
-
-
-
-
 
 /*.navbar{                // earlier ver spotlights in nav & footer
 
@@ -176,8 +169,8 @@ filter: none;
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top"role="banner">
             <div class="navbar-header">
-			 <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" height="50px"/></a>			
-					<!-- for brand-->
+        			  <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200px" height="50px"/></a>			
+				      	<!-- for brand-->
                
                  
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -187,85 +180,83 @@ filter: none;
                     <span class="icon-bar"></span>
                 </button>
 				
-              </div>
+            </div>
            
-              <div class="collapse navbar-collapse">
-                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html"><b>Home</b></a></li>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                   <li class="active"><a href="index.html"><b>Home</b></a></li>
                
-     			   <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Top Flicks</b><i class="icon-angle-down"></i></a>
+     			          <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Top Flicks</b><i class="icon-angle-down">
+                          </i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">By Region</a></li>
                             <li><a href="#">By Era</a></li>
-                            
-		<li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">By Genres&nbsp <i class="icon-angle-right"></i></a>
-               <ul class="dropdown-menu">
-							
-                              
-               <li class="back"><a href="#">Back</a></li>
-             <li>
-                <a href="/movie-genres/action-adventure-films-1">Action/Adventure</a>
-             </li>
-        <li>
-          <a href="/movie-genres/animation-films-10">Animated</a>
-        </li>
-        <li>
-          <a href="/movie-genres/avant-garde-films-79">Avant-garde</a>
-        </li>
-        <li>
-          <a href="/movie-genres/comedy-films-24">Comedy</a>
-        </li>
-        <li>
-          <a href="/movie-genres/crime-films-39">Crime</a>
-        </li>
-        <li>
-           <a href="/movie-genres/cult-films-46">Cult</a>
-        </li>
-        <li>
-          <a href="/movie-genres/documentary-films-51">Documentary</a>
-        </li>
-        <li>
-          <a href="/movie-genres/drama-films-67">Drama</a>
-        </li>
-        <li>
-          <a href="/movie-genres/fantasy-films-81">Fantasy</a>
-        </li>
-        <li>
-          <a href="/movie-genres/horror-films-135">Horror</a>
-        </li>
-        <li>
-          <a href="/movie-genres/independent-films-147">Independent</a>
-        </li>
-        <li>
-          <a href="/movie-genres/lgbt-149">LGBTQ</a>
-        </li>
-        <li>
-          <a href="/movie-genres/short-films-148">Short</a>
-        </li>
-        <li>
-          <a href="/movie-genres/silent-films-162">Silent</a>
-        </li>
-        <li>
-          <a href="/movie-genres/silent-films-169">Suspense</a>
-        </li>
-      </ul></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">By Genres&nbsp <i class="icon-angle-right"></i></a>
+                        <ul class="dropdown-menu">
+						                <li class="back"><a href="#">Back</a></li>
+                             <li>
+                                <a href="/movie-genres/action-adventure-films-1">Action/Adventure</a>
+                             </li>
+                            <li>
+                              <a href="/movie-genres/animation-films-10">Animated</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/avant-garde-films-79">Avant-garde</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/comedy-films-24">Comedy</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/crime-films-39">Crime</a>
+                            </li>
+                            <li>
+                               <a href="/movie-genres/cult-films-46">Cult</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/documentary-films-51">Documentary</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/drama-films-67">Drama</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/fantasy-films-81">Fantasy</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/horror-films-135">Horror</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/independent-films-147">Independent</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/lgbt-149">LGBTQ</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/short-films-148">Short</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/silent-films-162">Silent</a>
+                            </li>
+                            <li>
+                              <a href="/movie-genres/silent-films-169">Suspense</a>
+                            </li>
+                    </ul></li>
                             <li><a href="#">By Format</a></li>
                          </ul>
                     </li>
      
-                	 <li><a href="#"><b>New Flicks</b></a></li>
+                	   <li><a href="#"><b>New Flicks</b></a></li>
                      <li><a href="#"><b>Trending</b></a></li>
                     
-					 <li class="dropdown">
+					           <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>My Account</b> <i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Watched</a></li>
                             <li><a href="#">Rented</a></li>
                             <li><a href="#">Purchased</a></li>
-							<li class="divider"></li>
-							<li><a href="#"><b>My Favourite</b></a></li>
+							                <li class="divider"></li>
+							               <li><a href="#"><b>My Favourite</b></a></li>
                             <li><a href="#">Wishlist</a></li>
                             <li><a href="#">Preorder</a></li>
                         </ul>
@@ -274,124 +265,128 @@ filter: none;
 					
 				
 		
-	         	<li><a class="btn btn-default btn-danger" role="button" data-toggle="modal" data-target="#auth-login"><b style="color:white;">Log-in</b></a></li>
-	            <li><a class="btn btn-default btn-info" role="button" data-toggle="modal" data-target="#auth-signup"><b style="color:white;">Sign-up</b></a></li>
+	         	<li>
+              <a class="btn btn-default btn-danger" role="button" data-toggle="modal" data-target="#auth-login"><b style="color:white;">Log-in</b></a>
+            </li>
+	          <li>
+              <a class="btn btn-default btn-info" role="button" data-toggle="modal" data-target="#auth-signup"><b style="color:white;">Sign-up</b></a>
+            </li>
         
-		        <div class="input-group">
-                    <input type="text" class="form-control help-block" placeholder="Search" name="srch-term" id="srch-term">
-                
-                  
-				</div>
-		</ul>  </div>
+		    <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
         </div>
-         </header><!--/header-->
+		</ul> 
+  </div> 
+</header><!--/header-->
 
 
          
-		 <!-- signup/login modal-->
+<!-- signup/login modal-->
 	
-	 <div class="modal fade" id="auth-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="auth-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog modal-width" role="document">
-		<div class="modal-content">
-		  <div class="modal-body modal-padding">		  
+	  	<div class="modal-content">
+		    <div class="modal-body modal-padding">		  
 					
-	  <form class="form-signin" method="post" id="login-form">
+	        <form class="form-signin" method="post" id="login-form">
       
-        <h2 class="form-signin-heading"><b>Log In</b></h2><hr />
+             <h2 class="form-signin-heading"><b>Log In</b></h2><hr />
         
     
         
         <div class="form-group">
-        <input type="email" class="form-control help-block" placeholder="Email address" name="user_email" id="user_email" />
-        <span id="check-e"></span>
+           <input type="email" class="form-control" placeholder="Email address" name="user_email" id="user_email" />
+           <span id="check-e"></span>
         </div>
         
         <div class="form-group">
-        <input type="password" class="form-control help-block" placeholder="Password" name="password" id="password" />
+           <input type="password" class="form-control" placeholder="Password" name="password" id="password" />
         </div>
        
-      <hr />
+        <hr />
         
         <div class="form-group">
 
             <button type="submit" class="btn btn-default" name="btn-login" id="btn-login">
-        <span class="glyphicon glyphicon-log-in"></span> &nbsp; Log In
-      </button> 
-       <p class="text-right"><a href="#">Forgot password?</a></p>
+                 <span class="glyphicon glyphicon-log-in"></span> &nbsp; Log In
+            </button> 
+            <p class="text-right"><a href="#">Forgot password?</a></p>
         </div>  
       
       
       </form>
 
     </div>
-			<br>
-			<div class="grey"><center><b>CONNECT WITH</b></center></div>
+	 	<br/>
+			
+    <div class="grey"><center><b>CONNECT WITH</b></center></div>
 			<br/>
-			<a href="#" class="btn btn-lg btn-danger col-xs-6"><b>Gmail</b></a>
-			<a href="#" class="btn btn-lg col-xs-6" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>
+		<a href="#" class="btn btn-lg btn-danger col-xs-6"><b>Gmail</b></a>
+		<a href="#" class="btn btn-lg col-xs-6" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>
 
 	
 			
-		  </div>		  
-		</div>
-	  </div>
-	</div>
+		   </div>		  
+		 </div>
+	 </div>
+
 	
-		 <div class="modal fade" id="auth-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="auth-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog modal-width" role="document">
-		<div class="modal-content">
-		  <div class="modal-body modal-padding">		  
-			
-	  <form class="form-signin" method="post" id="login-form">
-      
-        <h2 class="form-signin-heading"><b>Sign-Up</b></h2><hr />
+	  	<div class="modal-content">
+		    <div class="modal-body modal-padding">		  
+			     <form class="form-signin" method="post" id="login-form">
+              <h2 class="form-signin-heading"><b>Sign-Up</b></h2><hr />
 	
 	
            
-       <div class="form-group">
-        <input type="text" class="form-control " placeholder="First name" name="first_name" id="first_name" />
-        </div>
+      <div class="form-group">
+          <input type="text" class="form-control " placeholder="First name" name="first_name" id="first_name" />
+      </div>
 		
-		 <div class="form-group">
-        <input type="text" class="form-control " placeholder="Last name" name="last_name" id="last_name" />
-        </div>
+  		 <div class="form-group">
+          <input type="text" class="form-control " placeholder="Last name" name="last_name" id="last_name" />
+       </div>
         
-        <div class="form-group">
-        <input type="email" class="form-control " placeholder="Email address" name="user_email" id="user_email" />
-        <span id="check-e"></span>
-        </div>
+      <div class="form-group">
+          <input type="email" class="form-control " placeholder="Email address" name="user_email" id="user_email" />
+          <span id="check-e"></span>
+      </div>
 		
-		 <div class="form-group">
-        <input type="number" class="form-control "" placeholder="Phone number" name="phone" id="phone" />
+		  <div class="form-group">
+        <input type="number" class="form-control  "placeholder="Phone number" name="phone" id="phone" />
+      </div>
+        
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password" name="password" id="password" />
         </div>
         
         <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password" name="password" id="password" />
+          <input type="password" class="form-control" placeholder="Retype Password" name="cpassword" id="cpassword" />
         </div>
         
-        <div class="form-group">
-        <input type="password" class="form-control help-block" placeholder="Retype Password" name="cpassword" id="cpassword" />
-        </div>
         <hr />
         
         <div class="form-group">
             <button type="submit" class="btn btn-default" name="btn-save" id="btn-submit">
-             <span class="glyphicon glyphicon-log-in"></span> &nbsp; Submit
+               <span class="glyphicon glyphicon-log-in"></span> &nbsp; Submit
             </button> 
-      
-		</div>  
-		  </form>	
+       </div>  
+		  
+    </form>	
 		
 			<div class="grey"><center><b>CONNECT WITH</b></center></div>
-			<br/>
-			<a href="#" class="btn btn-lg btn-danger"><b>Gmail</b></a>
+		
+    	<br/>
+		
+    	<a href="#" class="btn btn-lg btn-danger"><b>Gmail</b></a>
 			<a href="#" class="btn btn-lg" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>
 
 			
 		
 			
-		  </div>		  
-		</div>
+		   </div>		  
+		 </div>
 	  </div>
 	</div>
 		 
@@ -445,21 +440,21 @@ filter: none;
 				
                 <div class="item" style="background-image: url(images/slider/bg3.jpg); width:533; height:450px;">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content centered">
-                                    <h2 class="flickE animation animated-item-1">Latest Movies & Trends at PickurFlick</h2>
-                                    <p class="flickE animation animated-item-2">Go Pick your Flick!!:D</p>
-                                    <a class="flickE btn btn-md animation animated-item-3" href="#">Learn More</a>
-                                </div>
-                            </div>
-							<!-- Vimeo video -->
-                            <div class="col-sm-6 hidden-xs animation animated-item-4">
-                                <div class="centered">
-                                    <div class="embed-container">
-                                        <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="carousel-content centered">
+                                        <h2 class="flickE animation animated-item-1">Latest Movies & Trends at PickurFlick</h2>
+                                        <p class="flickE animation animated-item-2">Go Pick your Flick!!:D</p>
+                                        <a class="flickE btn btn-md animation animated-item-3" href="#">Learn More</a>
                                     </div>
                                 </div>
+    							<!-- Vimeo video -->
+                                <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                    <div class="centered">
+                                        <div class="embed-container">
+                                            <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
