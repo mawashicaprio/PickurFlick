@@ -283,19 +283,24 @@ filter: none;
 
          
 <!-- signup/login modal-->
-	
-	<div class="modal fade" id="auth-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog modal-width" role="document">
-	  	<div class="modal-content">
-		    <div class="modal-body modal-padding">		  
-					
-	        <form class="form-signin" method="post" id="login-form">
+  
+  <div class="modal fade" id="auth-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-width" role="document">
+      <div class="modal-content">
+
+          <div class="modal-header">
+            
+            <button type="button" class="close" data-dismiss="modal"><b>X</b></button>
+            <h2 class="form-signin-heading"><b>Log In</b></h2><hr/>
+
+          </div>
+
+        <div class="modal-body modal-padding">      
+          
+          <form class="form-signin" method="post" id="login-form">
       
-             <h2 class="form-signin-heading"><b>Log In</b></h2><hr />
-        
-    
-        
-        <div class="form-group">
+             
+          <div class="form-group">
            <input type="email" class="form-control" placeholder="Email address" name="user_email" id="user_email" />
            <span id="check-e"></span>
         </div>
@@ -304,7 +309,7 @@ filter: none;
            <input type="password" class="form-control" placeholder="Password" name="password" id="password"/>
         </div>
        
-        <hr />
+        <hr />  
         
         <div class="form-group">
 
@@ -318,34 +323,45 @@ filter: none;
       </form>
 
     </div>
-	 	<br/>
-			
+    <hr/>
+      
     <div class="grey"><center><b>CONNECT WITH</b></center></div>
-			<br/>
-		<a href="#" class="btn btn-lg btn-danger col-xs-6"><b>Gmail</b></a>
-		<a href="#" class="btn btn-lg col-xs-6" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>
+      <br/>
+    <a href="#" class="btn btn-lg btn-danger col-xs-6"><b>Gmail</b></a>
+    <a href="#" class="btn btn-lg col-xs-6" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>
+<br/><hr/>
+     <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
 
-	
-			
-		   </div>		  
-		 </div>
-	 </div>
+  
+      
+       </div>     
+     </div>
+   </div>
 
-	
-	<div class="modal fade" id="auth-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog modal-width" role="document">
-	  	<div class="modal-content">
-		    <div class="modal-body modal-padding">		  
-			     <form class="form-signin" method="post" id="login-form">
-              <h2 class="form-signin-heading"><b>Sign-Up</b></h2><hr />
-	
-	
+  <!-- Signup Modal -->
+
+  <div class="modal fade" id="auth-signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-width" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button type="button" class="close" data-dismiss="modal"><b>X</b></button>
+          <h2 class="form-signin-heading"><b>Sign-Up</b></h2><hr/>
+
+        </div>
+        <div class="modal-body modal-padding">      
+           <form class="form-signin" method="post" id="login-form">
+              
+  
+  
            
       <div class="form-group">
           <input type="text" class="form-control " placeholder="First name" name="first_name" id="first_name" />
       </div>
-		
-  		 <div class="form-group">
+    
+       <div class="form-group">
           <input type="text" class="form-control " placeholder="Last name" name="last_name" id="last_name" />
        </div>
         
@@ -353,8 +369,8 @@ filter: none;
           <input type="email" class="form-control " placeholder="Email address" name="user_email" id="user_email" />
           <span id="check-e"></span>
       </div>
-		
-		  <div class="form-group">
+    
+      <div class="form-group">
         <input type="number" class="form-control  "placeholder="Phone number" name="phone" id="phone" />
       </div>
         
@@ -373,25 +389,26 @@ filter: none;
                <span class="glyphicon glyphicon-log-in"></span> &nbsp; Submit
             </button> 
        </div>  
-		  
-    </form>	
-		
-			<div class="grey"><center><b>CONNECT WITH</b></center></div>
-		
-    	<br/>
-		
-    	<a href="#" class="btn btn-lg btn-danger"><b>Gmail</b></a>
-			<a href="#" class="btn btn-lg" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>
+      
+    </form> 
+       <hr/>
+      <div class="grey"><center><b>CONNECT WITH</b></center></div>
+    
+      <br/>
+    
+      <a href="#" class="btn btn-lg btn-danger"><b>Gmail</b></a>
+      <a href="#" class="btn btn-lg" style="background-color:#3b5998;"><b style="color:white">Facebook</b></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-			
-		
-			
-		   </div>		  
-		 </div>
-	  </div>
-	</div>
-		 
-		
+    
+      
+    
+      
+       </div>     
+     </div>
+    </div>
+  </div>
+  
     
 	
 	
