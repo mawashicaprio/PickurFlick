@@ -126,10 +126,8 @@ background-color:#FFE884;
 </style>
 <script>
 
-$("#closeSimple").click(function() {
-    $("div#simpleModal").removeClass("show");
-    $("#videoContainer").pause();
-    return false;                   
+$('body').on('hidden.bs.modal', '.modal', function () {
+$('video').trigger('pause');
 });
 </script>	
 	</head><!--/head-->
@@ -398,7 +396,7 @@ $("#closeSimple").click(function() {
           
                                    <div class="centered">
                                         <div class="embed-container">
-                                            <iframe id="videoContainer" src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                            <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                         </div>
                                     </div>   
         </div>     
