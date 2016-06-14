@@ -129,7 +129,7 @@ background-color:#FFE884;
 <script>
 
 $('body').on('hidden.bs.modal', '.modal', function () {
-$('iframe').trigger('pause');
+document.getElementById("iframe1").Disabled = true;
 });
 </script>	
 	</head><!--/head-->
@@ -398,7 +398,7 @@ $('iframe').trigger('pause');
           
                                    <div class="centered">
                                         <div class="embed-container">
-                                            <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                            <iframe id="iframe1" src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=a22c2f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                         </div>
                                     </div>   
         </div>     
